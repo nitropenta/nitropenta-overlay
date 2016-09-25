@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!DOCTYPE repositories SYSTEM "https://www.gentoo.org/dtd/repositories.dtd">
+<repositories version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>nitropenta</name>
+		<description>nitropenta's personal gentoo overlay</description>
+		<homepage>https://github.com/nitropenta/nitropenta-overlay</homepage>
+		<owner type="person">
+			<name>nitropenta</name>
+			<email>nitropenta@users.noreply.github.com</email>
+		</owner>
+		<source type="git">https://github.com/nitropenta/nitropenta-overlay.git</source>
+	</repo>
+</repositories>
