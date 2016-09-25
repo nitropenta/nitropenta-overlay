@@ -1,0 +1,12 @@
+diff -Naur a/src/Main.hh b/src/Main.hh
+--- a/src/Main.hh	2016-08-10 05:56:48.000000000 -0500
++++ b/src/Main.hh	2016-09-25 13:08:08.620508484 -0500
+@@ -57,7 +57,7 @@
+             iteration_order.emplace_back(app.first, app.second);
+         }
+ 
+-        std::locale locale(suffixes.locale);
++        std::locale locale(suffixes.locale.c_str());
+         std::sort(iteration_order.begin(), iteration_order.end(), [locale](
+             const std::pair<std::string, const Application *> &s1,
+             const std::pair<std::string, const Application *> &s2) {
