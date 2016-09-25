@@ -18,8 +18,14 @@ IUSE=""
 DEPEND=""
 RDEPEND="x11-misc/dmenu"
 
+PATCHES=(
+	"${FILESDIR}"/${PN}-9999-fix_locale.patch
+)
+
 src_prepare() {
-	epatch "${FILESDIR}"/fix_locale.patch
+	epatch "${PATCHES[@]}"
+
+	eapply_user
 }
 
 src_configure() {
