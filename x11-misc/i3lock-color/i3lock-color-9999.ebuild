@@ -36,7 +36,7 @@ pkg_setup() {
 src_prepare() {
 	sed -i -e 's:login:system-auth:' ${MY_PN}.pam || die
 	sed -i -e '/MANDIR/d' Makefile || die
-	epatch_user
+	eapply_user
 }
 
 src_install() {
